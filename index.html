@@ -1,71 +1,156 @@
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <body>
-      <header>
-          <h1>My Portfolio</h1>
-          <nav>
-              <a href="#about">About</a>
-              <a href="#projects">Projects</a>
-              <a href="#contact">Contact</a>
-          </nav>
-      </header>
-  
-      <div class="container">
-          <section id="about">
-              <h2>About Me</h2>
-              <p>Hi! I'm a passionate web developer focused on creating amazing web experiences. Here you'll find a showcase of my recent projects.</p>
-          </section>
-  
-          <section id="projects">
-              <h2>My Projects</h2>
-              <div class="projects">
-                  <div class="project">
-                      <h3>Project 1</h3>
-                      <a href="https://image-search-engine-black.vercel.app/" target="_blank">Image Search Engine</a>
-                  </div>
-                  <div class="project">
-                      <h3>Project 2</h3>
-                      <a href="https://qr-code-generator-theta-mauve.vercel.app/" target="_blank">QR Code Generater</a>
-                  </div>
-                  <div class="project">
-                      <h3>Project 3</h3>
-                      <a href="https://text-to-voice-converter-sepia.vercel.app/" target="_blank">Text To Voice Converter</a>
-                  </div>
-                  <div class="project">
-                      <h3>Project 4</h3>
-                      <a href="https://random-password-generater-kappa.vercel.app/" target="_blank">Random Password Generater</a>
-                  </div>
-                  <div class="project">
-                      <h3>Project 5</h3>
-                      <a href="https://age-calculator-beta-six.vercel.app/" target="_blank">Age Calculater</a>
-                  </div>
-              </div>
-          </section>
-  
-          <section id="contact">
-              <h2>Contact Me</h2>
-              <p>You can reach out to me through the following channels:</p>
-              <div class="contact-info">
-                  <a href="mailto:your.email@example.com">Email: nilesh.nannaware48@gmail.com</a>
-                  <a href="tel:+1234567890">Phone: 7020461121</a>
-                  <a href="https://www.linkedin.com/in/nilesh-nannaware-428769237/" target="_blank">LinkedIn</a>
-                  <a href="https://github.com/nileshnannaware10" target="_blank">GitHub</a>
-              </div>
-          </section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <nav>
+      <div class="menu-icon" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
       </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <h1>Welcome to My Portfolio</h1>
+    <p>Hi, I'm Nilesh Nannaware, a passionate web developer.</p>
+    <a href="#projects" class="btn">View My Projects</a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>I am a passionate web developer with a strong foundation in designing and building dynamic, user-friendly, and responsive websites. With expertise in HTML, CSS, and JavaScript, I specialize in creating clean and efficient code to deliver seamless user experiences.</p>
+  </section>
+
+  <!-- Skills Section -->
+   <section id="skills" class="skills">
+    <h2>My Skills</h2>
+    <div class="skill-container">
+      <div class="skill">
+        <p>HTML</p>
+        <div class="skill-bar">
+          <div class="progress" data-percentage="90"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <p>CSS</p>
+        <div class="skill-bar">
+          <div class="progress" data-percentage="85"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <p>JavaScript</p>
+        <div class="skill-bar">
+          <div class="progress" data-percentage="30"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <p>React</p>
+        <div class="skill-bar">
+          <div class="progress" data-percentage="20"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <p>Google Cloud</p>
+        <div class="skill-bar">
+          <div class="progress" data-percentage="70"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <h2>My Projects</h2>
+    <div class="project-grid">
+      <!-- Project 1 -->
+      <div class="project-card">
+        <h3>Project 1: Image Search Engine</h3>
+        <p>A tool to search and display images using an API.</p>
+        <a href="https://image-search-engine-black.vercel.app/" class="btn">View Project</a>
+      </div>
+      
+      <!-- Project 2 -->
+      <div class="project-card">
+        <h3>Project 2: QR Code Generator</h3>
+        <p>A web app to generate QR codes instantly.</p>
+        <a href="https://qr-code-generator-theta-mauve.vercel.app/" class="btn">View Project</a>
+      </div>
+      
+      <!-- Project 3 -->
+      <div class="project-card">
+        <h3>Project 3: Text-to-Voice Converter</h3>
+        <p>A project that converts text to speech using modern APIs.</p>
+        <a href="https://text-to-voice-converter-sepia.vercel.app/" class="btn">View Project</a>
+      </div>
+      
+      <!-- Project 4 -->
+      <div class="project-card">
+        <h3>Project 4: Random-Password-Generator</h3>
+        <p>A Project that Helps for generating the Passwords.</p>
+        <a href="https://random-password-generater-kappa.vercel.app/" class="btn">View Project</a>
+      </div>
+      
+      <!-- Project 5 -->
+      <div class="project-card">
+        <h3>Project 5: Age Calculator</h3>
+        <p>A Project that Helps For Calculating Our Age.</p>
+        <a href="https://age-calculator-beta-six.vercel.app/" class="btn">View Project</a>
+      </div>
+      
+      <!-- Project 6 -->
+      <div class="project-card">
+        <h3>Project 6: Responsive Quiz App</h3>
+        <p>A quiz app built with HTML, CSS, and JavaScript.</p>
+        <a href="https://quiz-app-azure-eta.vercel.app/" class="btn">View Project</a>
+      </div>
+      
+      <!-- Project 7 -->
+      <div class="project-card">
+        <h3>Project 7: Responsive Weather App</h3>
+        <p>A responsive and dynamic Weather App For Fetching the Weather Data.</p>
+        <a href="https://weather-app-virid-nine-40.vercel.app/" class="btn">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:example@example.com">nilesh.nannaware48@gmail.com</a></p>
+    <p>Phone: <a href="tel:+1234567890">+91-7020461121</a></p>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/nilesh-nannaware-428769237/" target="_blank">LinkedIn</a>
+      <br>
+      <a href="https://github.com/nileshnannaware10" target="_blank">GitHub</a>
+      <br>
+      <a href="https://www.cloudskillsboost.google/public_profiles/5429d8b2-4be9-4863-b8bc-6fa9c70c4871" target="_blank">GCP Public Profile</a>
+    </div>
+  </section>
   
-      <footer>
-          <p>&copy; 2024 My Portfolio. All rights reserved. | <a href="#">Privacy Policy</a></p>
-      </footer>
-    
-    <script src="" async defer></script>
-  </body>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <p>© Nilesh Nannaware. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
