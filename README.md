@@ -1,18 +1,30 @@
 
-**My Personal Portfolio**
+# Portfolio Website
 
-## Description
-This is a simple yet elegant personal portfolio website created using pure HTML and CSS. It showcases my projects, skills, and provides a brief introduction about myself.
+This is my personal portfolio website showcasing my projects, skills, and experience. The website is built with modern web development technologies and hosted on [Vercel](https://vercel.com/).
 
-## Features
-- **Responsive Design**: The portfolio is fully responsive, ensuring it looks great on all devices.
-- **Project Showcase**: Displays a selection of my work with links to live demos and source code.
-- **Contact Information**: Provides ways for potential clients or employers to reach out.
+## 🚀 Live Demo  
+Visit my portfolio: [Portfolio Website](https://portfolio-six-lime-92.vercel.app/)
 
-## Technologies Used
-- HTML
-- CSS
-- JAVASCRIPT
+
+## 📋 Features
+- **Responsive Design:** Optimized for a seamless experience on all devices.
+- **Sections Included:**
+  - About Me
+  - Projects
+  - Skills
+  - Contact
+- Smooth animations and interactive elements.
+
+
+## 🛠️ Technologies Used
+- **Frontend:**
+  - HTML
+  - CSS (with responsive design)
+  - JavaScript
+- **Hosting:**  
+  Deployed on [Vercel](https://vercel.com/).
+
 
 ## Projects
 Here are some of the projects included in my portfolio:
@@ -30,10 +42,18 @@ Here are some of the projects included in my portfolio:
    - https://random-password-generater-kappa.vercel.app/
 
 4. **QR Code Generator**
-   - A web application that generates QR codes from user-inputted text or URLs.
+   - A website that generates QR codes from user-inputted text or URLs.
    - https://qr-code-generator-theta-mauve.vercel.app/
 
 5. **Text to Voice Converter**
    - An application that converts text input into spoken words using Web Speech API.
    - https://text-to-voice-converter-sepia.vercel.app/
+  
+6. **Quiz App**
+   - A website that conduct multiple types of questions regarding Development.
+   - https://quiz-app-azure-eta.vercel.app/
+  
+7. **Weather App**
+   -A website That fetch the weather related Information Across all the states.
+   -https://weather-app-virid-nine-40.vercel.app/
 
