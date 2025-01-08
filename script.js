@@ -17,4 +17,16 @@ function toggleMenu() {
       }
     });
   });
+
+ // Scroll Animation for About Section
+const aboutSection = document.querySelector('.about-content');
+window.addEventListener('scroll', () => {
+  const aboutPosition = aboutSection.getBoundingClientRect().top;
+  const screenPosition = window.innerHeight / 1.5;
+  if (aboutPosition < screenPosition) {
+    aboutSection.classList.add('animate');
+  }
+});
+
+
   
