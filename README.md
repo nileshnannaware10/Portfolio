@@ -54,11 +54,11 @@ Here are some of the projects included in my portfolio:
    - https://quiz-app-azure-eta.vercel.app/
   
 7. **Weather App**
-   -A website That fetch the weather related Information Across all the states.
-   -https://weather-app-virid-nine-40.vercel.app/
+   - A website That fetch the weather related Information Across all the states.
+   - https://weather-app-virid-nine-40.vercel.app/
 
 8.**Keep-Notes-App**
-  -A Web site that Worked same as to-do-list app.
-  -https://keep-notes-project.vercel.app/
+  - A Web site that Worked same as to-do-list app.
+  - https://keep-notes-project.vercel.app/
   
 
