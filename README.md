@@ -14,7 +14,7 @@ Visit my portfolio: [Portfolio Website](https://portfolio-six-lime-92.vercel.app
   - Projects
   - Skills
   - Contact
-- Smooth animations and interactive elements.
+  - Smooth animations and interactive elements.
 
 
 ## 🛠️ Technologies Used
