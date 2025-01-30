@@ -7,9 +7,13 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-
 </head>
 <body>
+  <!-- Loading Animation -->
+  <div class="loading-animation">
+    <div class="loader"></div>
+  </div>
+
   <!-- Header Section -->
   <header>
     <nav>
@@ -32,36 +36,36 @@
   <section id="home" class="hero">
     <h1>Welcome to My Portfolio</h1>
     <p>Hi, I'm Nilesh Nannaware, a passionate web developer.</p>
-    <a href="#projects" class="btn">View My Projects</a>
+    <div class="hero-buttons">
+      <a href="#projects" class="btn">View My Projects</a>
+      <a href="New resume 2025.pdf" download class="btn download-resume">Download Resume</a>
+    </div>
   </section>
 
-
-
-<!-- About Section -->
-<section id="about" class="about">
-  <h2>About Me</h2>
-  <div class="about-content">
-    <div class="about-image">
-      <img src="Nilesh.jpg" alt="Profile Picture">
-    </div>
-    <div class="about-text">
-      <p>
-        I am a passionate web developer with a strong foundation in designing and building dynamic, user-friendly, and responsive websites. 
-        With expertise in <span class="highlight">HTML</span>, <span class="highlight">CSS</span>, and <span class="highlight">JavaScript</span>, 
-        I specialize in creating clean and efficient code to deliver seamless user experiences.
-      </p>
-      <div class="badges">
-        <span class="badge">Web Development</span>
-        <span class="badge">Google Cloud</span>
-        <span class="badge">Responsive Design</span>
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <div class="about-image">
+        <img src="Nilesh.jpg" alt="Profile Picture">
+      </div>
+      <div class="about-text">
+        <p>
+          I am a passionate web developer with a strong foundation in designing and building dynamic, user-friendly, and responsive websites. 
+          With expertise in <span class="highlight">HTML</span>, <span class="highlight">CSS</span>, and <span class="highlight">JavaScript</span>, 
+          I specialize in creating clean and efficient code to deliver seamless user experiences.
+        </p>
+        <div class="badges">
+          <span class="badge">Web Development</span>
+          <span class="badge">Google Cloud</span>
+          <span class="badge">Responsive Design</span>
+        </div>
       </div>
     </div>
-  </div>
-</section>
-
+  </section>
 
   <!-- Skills Section -->
-   <section id="skills" class="skills">
+  <section id="skills" class="skills">
     <h2>My Skills</h2>
     <div class="skill-container">
       <div class="skill">
@@ -105,82 +109,107 @@
       <div class="project-card">
         <h3>Project 1: Image Search Engine</h3>
         <p>A tool to search and display images using an API.</p>
-        <a href="https://image-search-engine-black.vercel.app/" class="btn">View Project</a>
+        <div class="project-buttons">
+          <a href="https://image-search-engine-black.vercel.app/" class="btn">View Project</a>
+          <a href="https://github.com/nileshnannaware10/image-search-engine" class="btn view-code">View Code</a>
+        </div>
       </div>
-      
       <!-- Project 2 -->
       <div class="project-card">
         <h3>Project 2: QR Code Generator</h3>
         <p>A web app to generate QR codes instantly.</p>
-        <a href="https://qr-code-generator-theta-mauve.vercel.app/" class="btn">View Project</a>
+        <div class="project-buttons">
+          <a href="https://qr-code-generator-theta-mauve.vercel.app/" class="btn">View Project</a>
+          <a href="https://github.com/nileshnannaware10/QR-Code-Generator" class="btn view-code">View Code</a>
+        </div>
       </div>
-      
+      <!-- Add more project cards here -->
+
       <!-- Project 3 -->
       <div class="project-card">
         <h3>Project 3: Productivity App Landing Page</h3>
         <p>A responsive and dynamic Website For Showcasing Productivity Information.</p>
-        <a href="https://basic-productivity-app-landing-page.vercel.app/" class="btn">View Project</a>
+        <div class="project-buttons">
+          <a href="https://basic-productivity-app-landing-page.vercel.app/" class="btn">View Project</a>
+          <a href="https://github.com/nileshnannaware10/Basic-Productivity-App-Landing-Page" class="btn view-code">View Code</a>
+        </div>
       </div>
       
       <!-- Project 4 -->
       <div class="project-card">
         <h3>Project 4: Meme-Generator</h3>
         <p>A Project that Generate random Meme and you edit that meme and able to download it.</p>
-        <a href="https://meme-generator-lemon-beta.vercel.app/" class="btn">View Project</a>
+        <div class="project-buttons">
+          <a href="https://meme-generator-lemon-beta.vercel.app/" class="btn">View Project</a>
+          <a href="https://github.com/nileshnannaware10/Meme-Generator" class="btn view-code">View Code</a>
+        </div>
       </div>
       
       <!-- Project 5 -->
       <div class="project-card">
         <h3>Project 5: Age Calculator</h3>
         <p>A Project that Helps For Calculating Our Age.</p>
-        <a href="https://age-calculator-beta-six.vercel.app/" class="btn">View Project</a>
+        <div class="project-buttons">
+          <a href="https://age-calculator-beta-six.vercel.app/" class="btn">View Project</a>
+          <a href="https://github.com/nileshnannaware10/Age-Calculator" class="btn view-code">View Code</a>
+        </div>
       </div>
       
       <!-- Project 6 -->
       <div class="project-card">
         <h3>Project 6: Responsive Quiz App</h3>
         <p>A quiz app built with HTML, CSS, and JavaScript.</p>
-        <a href="https://quiz-app-azure-eta.vercel.app/" class="btn">View Project</a>
+        <div class="project-buttons">
+          <a href="https://quiz-app-azure-eta.vercel.app/" class="btn">View Project</a>
+          <a href="https://github.com/nileshnannaware10/Quiz-App" class="btn view-code">View Code</a>
+        </div>
       </div>
       
       <!-- Project 7 -->
       <div class="project-card">
         <h3>Project 7: Responsive Weather App</h3>
         <p>A responsive and dynamic Weather App For Fetching the Weather Data.</p>
-        <a href="https://weather-app-virid-nine-40.vercel.app/" class="btn">View Project</a>
+        <div class="project-buttons">
+          <a href="https://weather-app-virid-nine-40.vercel.app/" class="btn">View Project</a>
+          <a href="https://github.com/nileshnannaware10/weather-app" class="btn view-code">View Code</a>
+        </div>
       </div>
 
       <!-- Project 8 -->
       <div class="project-card">
         <h3>Project 8: Keep Notes Project</h3>
         <p>A responsive and dynamic Notes Website for Adding the Any Information.</p>
-        <a href="https://keep-notes-project.vercel.app/" class="btn">View Project</a>
+        <div class="project-buttons">
+          <a href="https://keep-notes-project.vercel.app/" class="btn">View Project</a>
+          <a href="https://github.com/nileshnannaware10/Keep-Notes-Project" class="btn view-code">View Code</a>
+        </div>
       </div>
-
     </div>
   </section>
 
- <!-- Contact Section -->
-<section id="contact" class="contact">
-  <h2>Contact Me</h2>
-  <p>Email: <a href="mailto:nilesh.nannaware48@gmail.com"><i class="fas fa-envelope"></i> nilesh.nannaware48@gmail.com</a></p>
-  <p>Phone: <a href="tel:+917020461121"><i class="fas fa-phone-alt"></i> +91-7020461121</a></p>
-  <div class="social-links">
-    <a href="https://www.linkedin.com/in/nilesh-nannaware-428769237/" target="_blank">
-      <i class="fab fa-linkedin"></i> LinkedIn
-    </a>
-    <br>
-    <a href="https://github.com/nileshnannaware10" target="_blank">
-      <i class="fab fa-github"></i> GitHub
-    </a>
-    <br>
-    <a href="https://www.cloudskillsboost.google/public_profiles/5429d8b2-4be9-4863-b8bc-6fa9c70c4871" target="_blank">
-      <i class="fas fa-cloud"></i> GCP Public Profile
-    </a>
-  </div>
-</section>
-
-  
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form class="contact-form" action="https://formspree.io/f/xpwqrwre" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/nilesh-nannaware-428769237/" target="_blank">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a>
+      <br>
+      <a href="https://github.com/nileshnannaware10" target="_blank">
+        <i class="fab fa-github"></i> GitHub
+      </a>
+      <br>
+      <a href="https://www.cloudskillsboost.google/public_profiles/5429d8b2-4be9-4863-b8bc-6fa9c70c4871" target="_blank">
+        <i class="fas fa-cloud"></i> GCP Public Profile
+      </a>
+    </div>
+  </section>
 
   <!-- Footer Section -->
   <footer class="footer">
