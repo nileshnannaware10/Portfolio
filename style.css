@@ -498,3 +498,277 @@ header {
   color: #00ffcc;
   font-family: 'Poppins', sans-serif;
 }
+
+/* Dark Mode Styles */
+body.light-mode {
+  background-color: #ffffff;
+  color: #121212;
+}
+
+header.light-mode {
+  background-color: #f0f0f0;
+}
+
+.light-mode .nav-links li a {
+  color: #121212;
+}
+
+.light-mode .theme-toggle {
+  color: #121212;
+}
+
+.light-mode .about,
+.light-mode .skills,
+.light-mode .projects,
+.light-mode .contact,
+.light-mode .footer {
+  background-color: #f0f0f0;
+  color: #121212;
+}
+
+/* Skip to Content Link */
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.skip-link:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  padding: 0.5rem;
+  background-color: #00ffcc;
+  color: #121212;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Before/After Slider */
+.before-after {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.before, .after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.after {
+  width: 50%;
+}
+
+.slider {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.parallax {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('path-to-your-image.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  padding: 4rem 1rem;
+  color: #121212;
+}
+
+.project-card {
+  perspective: 1000px;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.project-card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.card-front {
+  background-color: #2a2a2a;
+}
+
+.card-back {
+  background-color: #00ffcc;
+  color: #121212;
+  transform: rotateY(180deg);
+}
+
+.hero {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.nav-links li a.active {
+  color: #00ffcc;
+  border-bottom: 2px solid #00ffcc;
+}
+
+/* Base styles for the project card */
+.project-card {
+  perspective: 1000px;
+  width: 100%; /* Full width on smaller screens */
+  max-width: 300px; /* Limit width on larger screens */
+  margin: 0 auto; /* Center the card */
+  height: 400px; /* Fixed height for consistency */
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.project-card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-front {
+  background-color: #2a2a2a;
+  color: #ffffff;
+}
+
+.card-back {
+  background-color: #00ffcc;
+  color: #121212;
+  transform: rotateY(180deg);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .project-card {
+    max-width: 250px; /* Smaller cards on tablets */
+    height: 350px; /* Adjust height for smaller screens */
+  }
+
+  .card-front h3 {
+    font-size: 1.2rem; /* Smaller font size for headings */
+  }
+
+  .card-front p,
+  .card-back p {
+    font-size: 0.9rem; /* Smaller font size for text */
+  }
+
+  .project-buttons {
+    flex-direction: column; /* Stack buttons vertically on small screens */
+    gap: 0.5rem;
+  }
+
+  .project-buttons .btn {
+    padding: 0.6rem 1rem; /* Smaller buttons */
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-card {
+    max-width: 100%; /* Full width on mobile */
+    height: 300px; /* Adjust height for mobile */
+  }
+
+  .card-front h3 {
+    font-size: 1rem; /* Even smaller font size for mobile */
+  }
+
+  .card-front p,
+  .card-back p {
+    font-size: 0.8rem; /* Smaller font size for mobile */
+  }
+
+  .project-buttons .btn {
+    padding: 0.5rem 0.8rem; /* Smaller buttons for mobile */
+    font-size: 0.8rem;
+  }
+}
+
+/* Add this to handle the flipped state */
+.card-inner.flipped {
+  transform: rotateY(180deg);
+}
+
+#typewriter::after {
+  content: "|";
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
