@@ -82,3 +82,106 @@ window.addEventListener('load', () => {
   const loadingAnimation = document.querySelector('.loading-animation');
   loadingAnimation.style.display = 'none';
 });
+
+// Dark Mode Toggle
+function toggleTheme() {
+  const body = document.body;
+  body.classList.toggle('light-mode');
+
+  const themeIcon = document.querySelector('.theme-toggle i');
+  if (body.classList.contains('light-mode')) {
+    themeIcon.classList.remove('fa-moon');
+    themeIcon.classList.add('fa-sun');
+    localStorage.setItem('theme', 'light-mode');
+  } else {
+    themeIcon.classList.remove('fa-sun');
+    themeIcon.classList.add('fa-moon');
+    localStorage.setItem('theme', 'dark-mode');
+  }
+}
+
+// Check local storage for theme preference
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme === 'light-mode') {
+  document.body.classList.add('light-mode');
+  document.querySelector('.theme-toggle i').classList.remove('fa-moon');
+  document.querySelector('.theme-toggle i').classList.add('fa-sun');
+}
+
+// Before/After Slider
+const slider = document.querySelector('.slider');
+const after = document.querySelector('.after');
+
+if (slider && after) {
+  slider.addEventListener('input', () => {
+    after.style.width = `${slider.value}%`;
+  });
+}
+
+const typewriterElement = document.getElementById('typewriter');
+const sentences = [
+  "Welcome to My Portfolio",
+  "I'm Nilesh Nannaware",
+  "A Passionate Web Developer",
+  "Let's Build Something Amazing!"
+];
+let sentenceIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+
+function typeWriter() {
+  const currentSentence = sentences[sentenceIndex];
+
+  // Typing logic
+  if (!isDeleting && charIndex < currentSentence.length) {
+    typewriterElement.innerHTML += currentSentence.charAt(charIndex);
+    charIndex++;
+    setTimeout(typeWriter, 100); // Typing speed
+  }
+  // Deleting logic
+  else if (isDeleting && charIndex > 0) {
+    typewriterElement.innerHTML = currentSentence.substring(0, charIndex - 1);
+    charIndex--;
+    setTimeout(typeWriter, 50); // Deleting speed (faster than typing)
+  }
+  // Move to the next sentence or restart
+  else {
+    isDeleting = !isDeleting; // Toggle between typing and deleting
+    if (!isDeleting) {
+      sentenceIndex = (sentenceIndex + 1) % sentences.length; // Loop through sentences
+    }
+    setTimeout(typeWriter, 1000); // Pause before starting the next sentence
+  }
+}
+
+// Start the typewriter effect
+typeWriter();
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});
+
+window.addEventListener('scroll', () => {
+  const sections = document.querySelectorAll('section');
+  const navLinks = document.querySelectorAll('.nav-links li a');
+
+  sections.forEach((section, index) => {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.clientHeight;
+    if (window.scrollY >= sectionTop - sectionHeight / 3) {
+      navLinks.forEach(link => link.classList.remove('active'));
+      navLinks[index].classList.add('active');
+    }
+  });
+});
+
+document.querySelectorAll('.project-card').forEach(card => {
+  card.addEventListener('click', () => {
+    card.querySelector('.card-inner').classList.toggle('flipped');
+  });
+});
