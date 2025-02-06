@@ -29,12 +29,17 @@
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+      <button class="theme-toggle" onclick="toggleTheme()">
+        <i class="fas fa-moon"></i>
+      </button>
     </nav>
+    <a href="#main-content" class="skip-link">Skip to Content</a>
   </header>
-
+  
   <!-- Hero Section -->
   <section id="home" class="hero">
-    <h1>Welcome to My Portfolio</h1>
+    <div class="parallax"></div>
+    <h1 id="typewriter"></h1>
     <p>Hi, I'm Nilesh Nannaware, a passionate web developer.</p>
     <div class="hero-buttons">
       <a href="#projects" class="btn">View My Projects</a>
@@ -83,7 +88,7 @@
       <div class="skill">
         <p>JavaScript</p>
         <div class="skill-bar">
-          <div class="progress" data-percentage="30"></div>
+          <div class="progress" data-percentage="60"></div>
         </div>
       </div>
       <div class="skill">
@@ -105,83 +110,141 @@
   <section id="projects" class="projects">
     <h2>My Projects</h2>
     <div class="project-grid">
+
       <!-- Project 1 -->
       <div class="project-card">
-        <h3>Project 1: Image Search Engine</h3>
-        <p>A tool to search and display images using an API.</p>
-        <div class="project-buttons">
-          <a href="https://image-search-engine-black.vercel.app/" class="btn">View Project</a>
-          <a href="https://github.com/nileshnannaware10/image-search-engine" class="btn view-code">View Code</a>
+        <div class="card-inner">
+          <div class="card-front">
+            <h3>Project 1: Image Search Engine</h3>
+            <p>A tool to search and display images using an API.</p>
+          </div>
+          <div class="card-back">
+            <p>Technologies used: HTML, CSS, JavaScript, API Integration</p>
+            <div class="project-buttons">
+              <a href="https://image-search-engine-black.vercel.app/" class="btn">View Project</a>
+              <a href="https://github.com/nileshnannaware10/image-search-engine" class="btn view-code">View Code</a>
+            </div>
+          </div>
         </div>
       </div>
+
       <!-- Project 2 -->
       <div class="project-card">
-        <h3>Project 2: QR Code Generator</h3>
-        <p>A web app to generate QR codes instantly.</p>
-        <div class="project-buttons">
-          <a href="https://qr-code-generator-theta-mauve.vercel.app/" class="btn">View Project</a>
-          <a href="https://github.com/nileshnannaware10/QR-Code-Generator" class="btn view-code">View Code</a>
+        <div class="card-inner">
+          <div class="card-front">
+            <h3>Project 2: Productivity App Landing Page</h3>
+            <p>A responsive and dynamic Website For Showcasing Productivity Information.</p>
+          </div>
+          <div class="card-back">
+            <p>Technologies used: HTML, CSS, JavaScript</p>
+            <div class="project-buttons">
+              <a href="https://basic-productivity-app-landing-page.vercel.app/" class="btn">View Project</a>
+              <a href="https://github.com/nileshnannaware10/Basic-Productivity-App-Landing-Page" class="btn view-code">View Code</a>
+            </div>
+          </div>
         </div>
       </div>
-      <!-- Add more project cards here -->
+
 
       <!-- Project 3 -->
       <div class="project-card">
-        <h3>Project 3: Productivity App Landing Page</h3>
-        <p>A responsive and dynamic Website For Showcasing Productivity Information.</p>
-        <div class="project-buttons">
-          <a href="https://basic-productivity-app-landing-page.vercel.app/" class="btn">View Project</a>
-          <a href="https://github.com/nileshnannaware10/Basic-Productivity-App-Landing-Page" class="btn view-code">View Code</a>
+        <div class="card-inner">
+          <div class="card-front">
+            <h3>Project 3: QR Code Generator</h3>
+            <p> web app to generate QR codes instantly.</p>
+          </div>
+          <div class="card-back">
+            <p>Technologies used: HTML, CSS, JavaScript</p>
+            <div class="project-buttons">
+              <a href="https://qr-code-generator-theta-mauve.vercel.app/" class="btn">View Project</a>
+              <a href="https://github.com/nileshnannaware10/QR-Code-Generator" class="btn view-code">View Code</a>
+            </div>
+          </div>
         </div>
       </div>
       
       <!-- Project 4 -->
       <div class="project-card">
-        <h3>Project 4: Meme-Generator</h3>
-        <p>A Project that Generate random Meme and you edit that meme and able to download it.</p>
-        <div class="project-buttons">
-          <a href="https://meme-generator-lemon-beta.vercel.app/" class="btn">View Project</a>
-          <a href="https://github.com/nileshnannaware10/Meme-Generator" class="btn view-code">View Code</a>
+        <div class="card-inner">
+          <div class="card-front">
+            <h3>Project 4: Meme-Generator</h3>
+            <p> A Project that Generate random Meme and you edit that meme and able to download it.</p>
+          </div>
+          <div class="card-back">
+            <p>Technologies used: HTML, CSS, JavaScript, API Integration</p>
+            <div class="project-buttons">
+              <a href="https://meme-generator-lemon-beta.vercel.app/" class="btn">View Project</a>
+              <a href="https://github.com/nileshnannaware10/Meme-Generator" class="btn view-code">View Code</a>
+            </div>
+          </div>
         </div>
       </div>
       
       <!-- Project 5 -->
       <div class="project-card">
-        <h3>Project 5: Age Calculator</h3>
-        <p>A Project that Helps For Calculating Our Age.</p>
-        <div class="project-buttons">
-          <a href="https://age-calculator-beta-six.vercel.app/" class="btn">View Project</a>
-          <a href="https://github.com/nileshnannaware10/Age-Calculator" class="btn view-code">View Code</a>
+        <div class="card-inner">
+          <div class="card-front">
+            <h3>Project 5: Age Calculator</h3>
+            <p> A Project that Helps For Calculating Our Age.</p>
+          </div>
+          <div class="card-back">
+            <p>Technologies used: HTML, CSS, JavaScript</p>
+            <div class="project-buttons">
+              <a href="https://age-calculator-beta-six.vercel.app/" class="btn">View Project</a>
+              <a href="https://github.com/nileshnannaware10/Age-Calculator" class="btn view-code">View Code</a>
+            </div>
+          </div>
         </div>
       </div>
       
       <!-- Project 6 -->
       <div class="project-card">
-        <h3>Project 6: Responsive Quiz App</h3>
-        <p>A quiz app built with HTML, CSS, and JavaScript.</p>
-        <div class="project-buttons">
-          <a href="https://quiz-app-azure-eta.vercel.app/" class="btn">View Project</a>
-          <a href="https://github.com/nileshnannaware10/Quiz-App" class="btn view-code">View Code</a>
+        <div class="card-inner">
+          <div class="card-front">
+            <h3>Project 6: Responsive Quiz App</h3>
+            <p> A quiz app built with HTML, CSS, and JavaScript.</p>
+          </div>
+          <div class="card-back">
+            <p>Technologies used: HTML, CSS, JavaScript</p>
+            <div class="project-buttons">
+              <a href="https://quiz-app-azure-eta.vercel.app/" class="btn">View Project</a>
+              <a href="https://github.com/nileshnannaware10/Quiz-App" class="btn view-code">View Code</a>
+            </div>
+          </div>
         </div>
       </div>
       
       <!-- Project 7 -->
       <div class="project-card">
-        <h3>Project 7: Responsive Weather App</h3>
-        <p>A responsive and dynamic Weather App For Fetching the Weather Data.</p>
-        <div class="project-buttons">
-          <a href="https://weather-app-virid-nine-40.vercel.app/" class="btn">View Project</a>
-          <a href="https://github.com/nileshnannaware10/weather-app" class="btn view-code">View Code</a>
+        <div class="card-inner">
+          <div class="card-front">
+            <h3>Project 7: Responsive Weather App</h3>
+            <p> A responsive and dynamic Weather App For Fetching the Weather Data.</p>
+          </div>
+          <div class="card-back">
+            <p>Technologies used: HTML, CSS, JavaScript, API Integration</p>
+            <div class="project-buttons">
+              <a href="https://weather-app-virid-nine-40.vercel.app/" class="btn">View Project</a>
+              <a href="https://github.com/nileshnannaware10/weather-app" class="btn view-code">View Code</a>
+            </div>
+          </div>
         </div>
       </div>
 
       <!-- Project 8 -->
       <div class="project-card">
-        <h3>Project 8: Keep Notes Project</h3>
-        <p>A responsive and dynamic Notes Website for Adding the Any Information.</p>
-        <div class="project-buttons">
-          <a href="https://keep-notes-project.vercel.app/" class="btn">View Project</a>
-          <a href="https://github.com/nileshnannaware10/Keep-Notes-Project" class="btn view-code">View Code</a>
+        <div class="card-inner">
+          <div class="card-front">
+            <h3>Project 8: Keep Notes Project</h3>
+            <p> web app to generate QR codes instantly.</p>
+          </div>
+          <div class="card-back">
+            <p>Technologies used: HTML, CSS, JavaScript, API Integration</p>
+            <div class="project-buttons">
+              <a href="https://keep-notes-project.vercel.app/" class="btn">View Project</a>
+              <a href="https://github.com/nileshnannaware10/Keep-Notes-Project" class="btn view-code">View Code</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
