@@ -772,3 +772,21 @@ header.light-mode {
     opacity: 0;
   }
 }
+
+.skill-percentage {
+  float: right;
+  color: #00ffcc;
+  font-weight: bold;
+}
+
+.skill-bar .progress:hover::after {
+  content: attr(data-percentage) "%";
+  position: absolute;
+  right: 10px;
+  top: -25px;
+  background-color: #00ffcc;
+  color: #121212;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
