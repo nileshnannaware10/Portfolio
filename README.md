@@ -15,7 +15,7 @@ Check out my portfolio here: [Portfolio Website](https://portfolio-six-lime-92.v
   - Projects Showcase  
   - Skills Overview  
   - Contact Form  
-- **Interactive UI:** Smooth animations and engaging user interactions for an enhanced browsing experience.  
+  - **Interactive UI:** Smooth animations and engaging user interactions for an enhanced browsing experience.  
 
 ---
 
