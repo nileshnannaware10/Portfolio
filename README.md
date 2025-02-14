@@ -6,7 +6,6 @@ Welcome to my personal portfolio website! This platform highlights my projects, 
 ## 🚀 Live Preview  
 Check out my portfolio here: [Portfolio Website](https://portfolio-six-lime-92.vercel.app/)  
 
----
 
 ## 📋 Key Features  
 - **Fully Responsive:** Optimized for smooth performance across all screen sizes and devices.  
@@ -17,7 +16,6 @@ Check out my portfolio here: [Portfolio Website](https://portfolio-six-lime-92.v
   - Contact Form  
   - **Interactive UI:** Smooth animations and engaging user interactions for an enhanced browsing experience.  
 
----
 
 ## 🛠️ Technologies  
 - **Frontend:**  
@@ -26,7 +24,6 @@ Check out my portfolio here: [Portfolio Website](https://portfolio-six-lime-92.v
   - JavaScript  
 - **Deployment:** Hosted on [Vercel](https://vercel.com/) for lightning-fast performance.  
 
----
 
 ## 📂 Projects  
 
