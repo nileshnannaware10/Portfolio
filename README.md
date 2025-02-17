@@ -59,4 +59,8 @@ Here are some of the key projects featured on my portfolio site:
 
 8. **Meme Generator**  
    - Generate and customize random memes with top and bottom text. Download your creations with a single click!  
-   - [View Project](https://meme-generator-lemon-beta.vercel.app/)  
+   - [View Project](https://meme-generator-lemon-beta.vercel.app/)
+
+ 9. **Movie Search App**
+   - A responsive and visually appealing movie search app built using HTML, CSS, and JavaScript. The app fetches movie data from the OMDb API and allows users to search for movies, view details, and save favorites.
+   - https://movie-search-app-theta-three.vercel.app/
