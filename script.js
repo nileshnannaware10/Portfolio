@@ -185,3 +185,158 @@ document.querySelectorAll('.project-card').forEach(card => {
     card.querySelector('.card-inner').classList.toggle('flipped');
   });
 });
+
+// Scroll Progress Indicator
+const progressBar = document.createElement('div');
+progressBar.className = 'scroll-progress';
+document.body.prepend(progressBar);
+
+window.addEventListener('scroll', () => {
+  const windowHeight = document.documentElement.scrollHeight - window.innerHeight;
+  const scrolled = (window.scrollY / windowHeight) * 100;
+  progressBar.style.width = `${scrolled}%`;
+});
+
+// Form Validation
+document.querySelector('.contact-form').addEventListener('submit', (e) => {
+  const email = document.querySelector('input[type="email"]');
+  if (!email.value.includes('@')) {
+    e.preventDefault();
+    email.parentElement.classList.add('error');
+    alert('Please enter a valid email address');
+  }
+});
+
+const CACHE_NAME = 'portfolio-v1';
+const ASSETS = [
+  '/',
+  '/index.html',
+  '/style.css',
+  '/script.js',
+  '/Nilesh.jpg'
+];
+
+self.addEventListener('install', (e) => {
+  e.waitUntil(
+    caches.open(CACHE_NAME).then(cache => cache.addAll(ASSETS))
+  );
+});
+
+self.addEventListener('fetch', (e) => {
+  e.respondWith(
+    caches.match(e.request).then(response => response || fetch(e.request))
+  );
+});
+
+// Updated Menu Toggle Function
+function toggleMenu() {
+  const navLinks = document.querySelector('.nav-links');
+  const menuIcon = document.querySelector('.menu-icon');
+  
+  // Toggle menu open/close
+  navLinks.classList.toggle('open');
+  
+  // Add animation to menu icon
+  menuIcon.classList.toggle('active');
+}
+
+// Enhanced Theme Toggle
+function toggleTheme() {
+  const body = document.body;
+  body.classList.toggle('light-mode');
+  
+  const theme = body.classList.contains('light-mode') ? 'light' : 'dark';
+  localStorage.setItem('theme', theme);
+  
+  // Update theme icon
+  const themeIcon = document.querySelector('.theme-toggle i');
+  themeIcon.classList.toggle('fa-moon');
+  themeIcon.classList.toggle('fa-sun');
+}
+
+// Check saved theme on load
+document.addEventListener('DOMContentLoaded', () => {
+  const savedTheme = localStorage.getItem('theme') || 'dark';
+  if (savedTheme === 'light') {
+    document.body.classList.add('light-mode');
+    document.querySelector('.theme-toggle i').classList.replace('fa-moon', 'fa-sun');
+  }
+});
+
+// Scroll to Top Functionality
+const scrollTopBtn = document.querySelector('.scroll-top');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 300) {
+    scrollTopBtn.classList.add('visible');
+  } else {
+    scrollTopBtn.classList.remove('visible');
+  }
+});
+
+scrollTopBtn.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
+
+// Enhanced Skills Animation
+const skillBars = document.querySelectorAll('.skill-bar .progress');
+
+const animateSkills = () => {
+  skillBars.forEach(bar => {
+    const percentage = bar.getAttribute('data-percentage');
+    bar.style.width = `${percentage}%`;
+  });
+};
+
+const skillsObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      animateSkills();
+      skillsObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.5 });
+
+skillBars.forEach(bar => {
+  skillsObserver.observe(bar.parentElement);
+});
+
+// Enhanced Form Submission
+document.querySelector('.contact-form').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  
+  const form = e.target;
+  const formData = new FormData(form);
+  const messageDiv = document.querySelector('.form-message');
+  
+  try {
+    const response = await fetch(form.action, {
+      method: 'POST',
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
+      }
+    });
+    
+    if (response.ok) {
+      messageDiv.textContent = 'Message sent successfully!';
+      messageDiv.classList.remove('error');
+      messageDiv.classList.add('success');
+      form.reset();
+    } else {
+      throw new Error('Form submission failed');
+    }
+  } catch (error) {
+    messageDiv.textContent = 'Oops! Something went wrong. Please try again.';
+    messageDiv.classList.remove('success');
+    messageDiv.classList.add('error');
+  }
+  
+  setTimeout(() => {
+    messageDiv.classList.remove('success', 'error');
+    messageDiv.textContent = '';
+  }, 5000);
+});
