@@ -64,3 +64,7 @@ Here are some of the key projects featured on my portfolio site:
  9. **Movie Search App**
    - A responsive and visually appealing movie search app built using HTML, CSS, and JavaScript. The app fetches movie data from the OMDb API and allows users to search for movies, view details, and save favorites.
    - https://movie-search-app-theta-three.vercel.app/
+
+ 10. **Jarvis Bot**
+     -Jarvis-Bot is a simple voice-controlled assistant built using HTML, CSS, and JavaScript. It leverages the Web Speech API to recognize user commands and perform actions such as opening websites, searching the web, and providing the current time and date.
+     -https://chat-application-tau-wheat.vercel.app/
