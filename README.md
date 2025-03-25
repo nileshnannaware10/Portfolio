@@ -1,6 +1,6 @@
 # Portfolio Website  
 
-Welcome to my personal portfolio website! This platform showcases my projects, technical skills, and experience in web development. The site is built using modern web technologies and hosted on [Vercel](https://vercel.com/).
+Welcome to my personal portfolio website! This platform showcases my projects, technical skills, and experience in web development. The site is built using modern web technologies and hosted on [Vercel](https://vercel.com/)
 
 ## 🚀 Live Preview  
 Check out my portfolio here: [Portfolio Website](https://portfolio-six-lime-92.vercel.app/).
